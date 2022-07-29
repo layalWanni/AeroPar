@@ -22,18 +22,26 @@ html {
 a {
 	text-decoration: none;
 }
-.container {
+#hero .container{
 	min-height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
+.container {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 img {
 	height: 100%;
 	width: 100%;
 	object-fit: cover;
 }
+
 p {
 	color: black;
 	font-size: 1.4rem;
@@ -81,6 +89,12 @@ p {
 }
 
 /* HEADER SECTION */
+.img-logo{
+	width: 20vh;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
 #header {
 	position: fixed;
 	z-index: 1000;
@@ -103,6 +117,7 @@ p {
 	max-width: 1300px;
 	padding: 0 10px;
 }
+
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
@@ -205,6 +220,9 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+
+
+
 /* FIM DA HEADER SECTION */
 
 /* HERO SECTION */
@@ -291,6 +309,7 @@ p {
 	flex-wrap: wrap;
 	margin-top: 50px;
 }
+
 #tecnam .tecnam-item1 {
 	flex-basis: 80%;
 	display: flex;
@@ -317,6 +336,7 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
+
 #tecnam .tecnam-item2 {
 	flex-basis: 80%;
 	display: flex;
@@ -369,6 +389,32 @@ p {
 	opacity: 0.9;
 	z-index: -1;
 }
+#tecnam .tecnam-item4 {
+	flex-basis: 80%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	padding: 30px;
+	border-radius: 10px;
+	background-image: url(/img/PMENTOR.jpg);
+	background-size: cover;
+	margin: 10px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+#tecnam .tecnam-item4::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	opacity: 0.9;
+	z-index: -1;
+}
 
 #tecnam .tecnam-item1 h2 {
 	font-size: 2rem;
@@ -399,6 +445,17 @@ p {
 	text-transform: uppercase;
 }
 #tecnam .tecnam-item3 p {
+	color: white;
+	text-align: left;
+}
+
+#tecnam .tecnam-item4 h2 {
+	font-size: 2rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+#tecnam .tecnam-item4 p {
 	color: white;
 	text-align: left;
 }
@@ -492,42 +549,75 @@ p {
 /* FIM CONTACT SECTION */
 
 /* FOOTER */
-#footer {
-	background-image: linear-gradient(60deg, #616161 0%, #c9c9c9 100%);
+
+/* .img-logo-footer{
+	width: 20vh;
+	padding-bottom: 5rem;
+} */
+
+.footer{
+    width: 100%;
+    background-color: #0a141d;
 }
-#footer .footer {
-	min-height: 200px;
-	flex-direction: column;
-	padding-top: 50px;
-	padding-bottom: 10px;
+.footer .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
 }
-#footer h2 {
-	color: white;
-	font-weight: 500;
-	font-size: 1.8rem;
-	letter-spacing: 0.1rem;
-	margin-top: 10px;
-	margin-bottom: 10px;
+.footer .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-#footer .social-icon {
-	display: flex;
-	margin-bottom: 30px;
+.footer .grupo-1 .box figure img{
+    width: 250px;
 }
-#footer .social-item {
-	height: 50px;
-	width: 50px;
-	margin: 0 5px;
+.footer .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
-#footer .social-item img {
-	filter: grayscale(1);
-	transition: 0.3s ease filter;
+.footer .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
 }
-#footer .social-item:hover img {
-	filter: grayscale(0);
+.footer .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
 }
-#footer p {
-	color: white;
-	font-size: 1.3rem;
+.footer .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.footer .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.footer .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .footer .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
 }
 /* FIM FOOTER */
 

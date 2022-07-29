@@ -6,8 +6,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="/img/faviconicon.ico">
+    <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
+
     <title>AeroPar</title>
+
 </head>
 
 <body>
@@ -19,7 +25,9 @@
 
                 <div class="brand">
                     <a href="#hero">
-                        <h1><span>AERO</span>PAR</h1>
+                        <!-- <h1><span>AERO</span>PAR</h1> -->
+                        <img class="img-logo" src="/img/logo.png">
+
                     </a>
                 </div>
 
@@ -31,7 +39,8 @@
                     <ul>
                         <li><a href="#hero" data-after="Home">Home</a></li>
                         <li><a href="#tecnam" data-after="Tecnam">Tecnam</a></li>
-                        <li><a href="#catalog" data-after="Catálogos">Catálogos</a></li>
+                        <li><a href="#catalog" data-after="Catálogos">Catálogos</a>
+                        </li>
                         <li><a href="#about" data-after="Sobre">Sobre</a></li>
                         <li><a href="#contact" data-after="Contacto">Contacto</a></li>
                     </ul>
@@ -92,6 +101,14 @@
                         compromisos en ningún frente.</p>
                 </div>
 
+                <div class="tecnam-item4">
+                    <h2>P-MENTOR - Instrutor IFR de dois lugares</h2>
+                    <p>P-Mentor representa la forma definitiva de formación convirtiéndose en la primera opción para
+                        la formación PPL, IR y UPRT. Es la elección más inteligente para cualquier FTO: una plataforma
+                        para diferentes misiones, desde entrenamiento básico hasta instrumental, que permite ofrecer
+                        un curso completo (monomotor) usando un avión.</p>
+                </div>
+
             </div>
         </div>
     </section>
@@ -139,11 +156,11 @@
                     <div class="contact-info">
                         <h1>Teléfono</h1>
                         <a
-                            href="https://api.whatsapp.com/send/?phone=5545998383259&text&type=phone_number&app_absent=0">
+                            href="https://api.whatsapp.com/send/?phone=5545998383259&text&type=phone_number&app_absent=0" target="_blank">
                             <h2>+55 (45) 9 9838-3259</h2>
                         </a>
                         <a
-                            href="https://api.whatsapp.com/send/?phone=5545998383259&text&type=phone_number&app_absent=0">
+                            href="https://api.whatsapp.com/send/?phone=5545998383259&text&type=phone_number&app_absent=0" target="_blank">
                             <h2>+55 (45) 9 9838-3259</h2>
                         </a>
                     </div>
@@ -175,23 +192,34 @@
     <!-- FIM CONTACT SECTION -->
 
     <!-- FOOTER -->
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand">
-                <h1><span>AERO</span>PAR</h1>
+    <footer class="footer">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#about">
+                        <img src="/img/logo.png" alt="Logo AeroPar">
+                    </a>
+                </figure>
             </div>
-            <h2>Volar sin parar</h2>
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-                </div>
-                <div class="social-item">
-                    <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
+            <div class="box">
+                <h2>SOBRE NOSOTROS</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="https://www.facebook.com/aeropar" target="_blank" class="fa fa-facebook"></a>
+                    <a href="https://www.instagram.com/aeropar.py/" target="_blank" class="fa fa-instagram"></a>
+                    <a href="https://api.whatsapp.com/send/?phone=5545998383259&text&type=phone_number&app_absent=0" target="_blank" class="fa fa-whatsapp"></a>
                 </div>
             </div>
-            <p>Copyright © 2022 AeroPar. All rights reserved</p>
         </div>
-    </section>
+        <div class="grupo-2">
+            <small>&copy; 2022 <b>AeroPar</b> - All rights reserved.</small>
+        </div>
+    </footer>
+    <!-- FIM FOOTER -->
 
     <a href="#hero" id="link-topo">
         <i class="fas fa-arrow-up"></i>
