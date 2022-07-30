@@ -119,6 +119,8 @@ p {
 	transition: 0.3s ease background-color;
 }
 
+/* background-color: rgba(220, 220, 220, 0.63); */
+
 #header .nav-bar {
 	display: flex;
 	align-items: center;
@@ -758,11 +760,6 @@ p {
 
 /* FOOTER */
 
-/* .img-logo-footer{
-	width: 20vh;
-	padding-bottom: 5rem;
-} */
-
 .footer {
 	width: 100%;
 	background-color: #0a141d;
@@ -995,6 +992,7 @@ p {
 		width: fit-content;
 		background-color: transparent;
 	}
+
 
 	#header .nav-list ul li {
 		display: inline-block;
