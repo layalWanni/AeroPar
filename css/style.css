@@ -115,7 +115,7 @@ p {
 
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
+	background-color: rgba(31, 30, 30, 0.719);
 	transition: 0.3s ease background-color;
 }
 
@@ -167,7 +167,7 @@ p {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%) scale(0);
-	color: rgba(240, 248, 255, 0.021);
+	color: rgba(255, 246, 240, 0.021);
 	font-size: 13rem;
 	letter-spacing: 50px;
 	z-index: -1;
@@ -249,7 +249,7 @@ p {
 
 /* HERO SECTION */
 #hero {
-	background-image: url(/img/background.jpg);
+	background-image: url(/img/background1.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
