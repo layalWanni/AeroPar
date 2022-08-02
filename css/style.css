@@ -391,7 +391,6 @@ p {
 	text-align: left;
 }
 
-
 /* FIM TECNAM SECTION */
 
 /* CATALOG SECTION */
@@ -543,51 +542,84 @@ p {
 /* FIM CATALOG SECTION */
 
 /* ABOUT SECTION */
-#about .about {
-	flex-direction: column-reverse;
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
-	padding: 100px 20px;
-}
 
-#about .col-left {
-	width: 250px;
-	height: 360px;
-}
-
-#about .col-right {
+.about{
+	height: 90vh;
 	width: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-#about .col-right h2 {
-	font-size: 1.8rem;
-	font-weight: 500;
-	letter-spacing: 0.2rem;
+.about .main img{
+	width: 580px;
+	max-width: 100%;
+	height: auto;
+	padding: 0 10px;
+}
+
+.all-text{
+	width: 600px;
+	max-width: 100%;
+	padding: 0 10px;
+}
+
+.main{
+	width: 1290px;
+	max-width: 95%;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.all-text h4{
+	font-size: 18px;
+	color: #616161;
+	letter-spacing: 1px;
+	font-weight: 400;
 	margin-bottom: 10px;
 }
 
-#about .col-right p {
+.all-text h1{
+	font-size: 40px;
+	color: #991d1d;
+	font-weight: 700;
 	margin-bottom: 20px;
 }
 
-#about .col-left .about-img {
-	height: 100%;
-	width: 100%;
-	position: relative;
-	border: 10px solid white;
+.all-text p{
+	font-size: 16px;
+	color: #616161;
+	line-height: 30px;
+	margin-bottom: 35px;
 }
 
-#about .col-left .about-img::after {
-	content: '';
-	position: absolute;
-	left: -33px;
-	top: 19px;
-	height: 98%;
-	width: 98%;
-	border: 7px solid #991d1d;
-	z-index: -1;
+@media screen and (max-width: 1250px){
+	.about{
+		width: 100%;
+		height: auto;
+		padding: 60px 0;
+	}
+
+	.all-text{
+		text-align: center;
+		margin-top: 40px;
+	}
 }
+
+@media screen and (max-width: 650px){
+	.about .main img{
+		margin-bottom: 35px;
+	}
+	.all-text h1{
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+}
+
 
 /* FIM ABOUT SECTION */
 
@@ -814,36 +846,6 @@ p {
 	}
 
 	/* FIM TECNAM SECTION */
-
-	/* ABOUT */
-	#about .about {
-		flex-direction: row;
-	}
-
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid #991d1d;
-	}
-
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-
-	#about .col-right h1 {
-		text-align: left;
-	}
-
-	/* FIM ABOUT */
 
 	/* CONTACT  */
 	#contact .contact {
